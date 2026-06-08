@@ -29,6 +29,7 @@ tache_extraction >> tache_transformation >> tache_chargement
 `>>` signifie « doit s'exécuter avant ». Airflow garantit donc que chaque tâche ne démarre que lorsque la précédente a réussi : on ne transforme qu'après avoir extrait, et on ne charge qu'après avoir transformé.
 
 ## Comment l'exécuter
+Copier le fichier mon_premier_dag_etl.py dans le dossier dags/ de votre installation Airflow, puis :
 ```bash
 # 1. Activer l'environnement et lancer Airflow
 export AIRFLOW_HOME=~/airflow-tp
